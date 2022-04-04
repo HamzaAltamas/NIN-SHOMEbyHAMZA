@@ -1,0 +1,793 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* ######### all common css end ############### */
+
+/* ################## logobar start ######################## */
+#logobar {
+    height: 115px;
+    width: 100%;
+}
+
+.logobarcontainer {
+    height: 100%;
+    position: relative;
+}
+
+.logobarcontainer img {
+    position: absolute;
+    top: 14px;
+}
+
+.logobarcontainer h1 {
+    position: absolute;
+    left: 87px;
+    line-height: 115px;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: #3ca2a2;
+}
+
+.logobarcontainer h2 {
+    position: absolute;
+    right: 0;
+    line-height: 115px;
+    font-family: 'Open Sans', sans-serif;
+}
+.logobarcontainer h2 a:hover{
+    color: black;
+}
+
+.logobarcontainer h2 a {
+    color: #ca0711;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ################## logobar end ######################## */
+
+/* ############################## navbar start ################################ */
+#navbar {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(207, 5, 17, 1) 32%, rgba(175, 16, 16, 1) 100%)
+}
+
+.navbarcontainer {
+    height: 100%;
+
+    position: relative;
+}
+
+.menu {
+    width: 86%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 15px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    position: relative;
+}
+
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    background: linear-gradient(180deg, rgba(207, 5, 17, 1) 32%, rgba(80, 17, 17, 1) 100%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    z-index: 10;
+}
+
+.menu ul li:hover>ul {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.menu ul li ul li {
+    width: 100%;
+    border-bottom: 1px solid transparent;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu ul li:hover {
+    background-color: #f18d26;
+    border-bottom: 1px solid white;
+}
+
+.menu ul li ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.socialicon {
+    width: 14%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.socialicon ul {
+    margin-top: 10px;
+}
+
+.socialicon ul li {
+    display: inline-block;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+
+}
+
+.socialicon ul li a {
+    position: absolute;
+    font-size: 20px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.socialicon ul li a i {
+    color: #b00f10;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.socialicon ul li:hover i {
+    color: white;
+}
+
+.socialicon ul li:hover {
+    background-color: transparent;
+}
+
+/* ############################## navbar end ################################ */
+
+/* ########################## banner start ################################ */
+#banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannercontainer {
+    height: 100%;
+    position: relative;
+}
+
+.bannercontainer h2 {
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: #215a6d;
+    padding-top: 75px;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.bannercontainer h1 {
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: #215a6d;
+    font-size: 40px;
+}
+
+.bannercontainer p {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+    margin-top: 30px;
+}
+
+.bannercontainer #bannerbtn a {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    background-color: #92c7a3;
+    color: white;
+    margin-top: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+#bannerbtn {
+    margin-top: 52px;
+}
+
+#bannerbtn a:hover {
+    padding: 7px 17px;
+    background-color: white;
+    color: #92c7a3;
+}
+
+.bannercontainer img {
+    position: absolute;
+    bottom: 0;
+    right: -22px;
+    animation: bannerimg 2s ease-in infinite;
+    -webkit-animation: bannerimg 2s ease-in infinite;
+}
+
+@keyframes bannerimg {
+    0% {
+        right: -22px;
+    }
+
+    50% {
+        right: 0;
+    }
+
+    100% {
+        right: -22px;
+    }
+}
+
+/* ########################## banner end ################################ */
+
+
+/* ############################# about start ############################## */
+#about {
+    width: 100%;
+    height: 445px;
+}
+
+.aboutcontainer {
+    position: relative;
+    height: 100%;
+}
+
+.aboutinner {
+    float: left;
+    height: 100%;
+    width: 32%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.aboutinner h2 {
+    margin-top: 50px;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: #3ca2a2;
+}
+
+.aboutinner img {
+    margin-top: 25px;
+}
+
+.aboutinner p {
+    margin-top: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+}
+
+.aboutinner .findbtn {
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aboutinner .findbtn a {
+    color: #3ca2a2;
+}
+
+.aboutinner .findbtn a i {
+    color: red;
+}
+
+/* ############################# about end ############################## */
+
+
+/* ############################ notice and feature start #################### */
+#notice {
+    background-color: #dfece6;
+    width: 100%;
+    height: 380px;
+}
+
+.noticecontainer {
+    height: 100%;
+
+}
+
+.noticeinner {
+    position: relative;
+    width: 46%;
+    float: left;
+
+    height: 100%;
+    margin-left: 30px;
+}
+
+.noticebox {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+
+    top: 100px;
+}
+
+.noticeinnerbox {
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+    margin-top: 1px;
+    position: relative;
+}
+
+.noticeinnerbox p {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #3ca2a2;
+    line-height: 44px;
+    display: inline-block;
+}
+
+.noticeinnerboxicon {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    background-color: #bf0a11;
+    right: 0;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.noticeinnerboxicon:hover {
+    background-color: #dfece6;
+    cursor: pointer;
+}
+
+.noticeinnerboxicon:hover i {
+    color: #bf0a11;
+}
+
+.noticeinnerboxicon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.noticeinner h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.bigdash {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    top: 68px;
+}
+
+.smalldash {
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #bf0a11;
+    top: 68px;
+}
+
+.noticeview {
+    position: absolute;
+    bottom: 18px;
+
+}
+
+.noticeview a {
+    color: #bf0a11;
+    font-family: 'Open Sans', sans-serif;
+}
+
+iframe {
+    position: absolute;
+    top: 102px;
+    left: 28px;
+}
+
+/* ############################ notice and feature end #################### */
+
+
+/* ################################ news and events start ################################# */
+#newsandevents {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+
+}
+
+.newsandeventscontainer {
+    height: 100%;
+
+
+}
+
+.newsinner {
+    width: 31%;
+    float: left;
+
+    height: 100%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.newsinner h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.bigdash1 {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #eaeaea;
+    top: 68px;
+
+}
+
+.smalldash2 {
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #bf0a11;
+    top: 68px;
+}
+
+.newsview {
+    color: #92c7a3;
+    position: absolute;
+    bottom: 18px;
+}
+
+.newsview a i {
+    color: #bf0a11;
+}
+
+.newsview a {
+    color: #92c7a3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.newsinner1 h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #3ca2a2;
+}
+
+.newsinner1 p {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+}
+
+.uph3 {
+    margin-top: 56px;
+}
+
+.downh3 {
+    margin-top: 76px;
+}
+
+.middledash {
+    width: 100%;
+    height: 3px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 219px;
+}
+
+.newsinner2 ul {
+    margin-top: 65px;
+}
+
+.newsinner2 ul li {
+    margin-top: 20px;
+}
+
+.newsinner2 ul li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+}
+
+.newsinner2 ul li a i {
+    color: #bf0a11;
+    font-weight: bold;
+
+}
+
+.newsinner3 img {
+    position: absolute;
+    border: 3px solid #dfece6;
+}
+
+.image1 {
+    top: 110px;
+    left: 27px;
+}
+
+.image2 {
+    top: 110px;
+    left: 180px;
+}
+
+.image3 {
+    top: 212px;
+    left: 27px;
+}
+
+.image4 {
+    top: 212px;
+    left: 180px;
+}
+
+/* ################################ news and events end ################################# */
+
+/* #################################### our doctor start ################################### */
+#doctor {
+    height: 480px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.doctorcontainer {
+    height: 100%;
+    position: relative;
+
+}
+
+.doctorup {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 0;
+
+}
+
+.doctordown {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.doctorup h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #215a6d;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.doctordowninner {
+    float: left;
+    width: 31%;
+    height: 100%;
+
+    margin-left: 20px;
+    text-align: center;
+}
+
+.doctordowninner h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-top: 15px;
+    color: #3ca2a2;
+
+}
+
+.doctordowninner p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-top: 7px;
+    color: #878787;
+}
+
+#dtitle {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-top: 7px;
+    color: #cf0511;
+}
+
+/* #################################### our doctor end ################################### */
+
+/* ##################################### footer Heading start ######################################## */
+#footerheading {
+    width: 100%;
+    height: 115px;
+    background-color: #222222;
+    margin-top: 50px;
+}
+
+.footerheadingcontainer {
+    height: 100%;
+    position: relative;
+}
+
+.footerheadingcontainer img {
+    position: absolute;
+    top: 14px;
+}
+
+.footerheadingcontainer h1 {
+    position: absolute;
+    left: 87px;
+    line-height: 115px;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: #3ca2a2;
+}
+
+/* ##################################### footer Heading end ######################################## */
+
+/* ################################## footer item start ############################### */
+#footeritems {
+    height: 170px;
+    width: 100%;
+    background-color: #222222;
+}
+
+.footeritemscontainer {
+
+    height: 100%;
+
+}
+
+.footerinner {
+
+    float: left;
+    width: 24%;
+    height: 100%;
+
+    margin-left: 9px;
+}
+
+.footerinner h3 {
+    color: #3ca2a2;
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin-top: 20px;
+}
+
+.footerinner ul {
+    margin-top: 10px;
+}
+
+.footerinner ul li {
+    margin-top: 15px;
+}
+
+.footerinner ul li a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footerinner ul li a i {
+    color: #cf0511;
+}
+
+/* ################################## footer item end ############################### */
+
+/* ################################### copyright start ################################  */
+#copy {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(207, 5, 17, 1) 32%, rgba(175, 16, 16, 1) 100%)
+}
+
+.copycontainer {
+    text-align: center;
+}
+
+.copycontainer p {
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.copycontainer p i {
+    color: white;
+}
+
+.copycontainer p a {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+/* ################################### copyright end ################################  */
+#forscrool {
+    height: 400px;
+}
